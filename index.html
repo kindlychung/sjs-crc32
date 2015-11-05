@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="web/css/bootstrap.min.css" rel="stylesheet">
+    <link href="web/css/bootstrap-datepicker3.standalone.min.css" rel="stylesheet">
+    <script type="text/javascript"
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>
+<body>
+
+<p id="text"></p>
+<p id="math">\(x^2 + y^2\)</p>
+<p id="count">what is this?</p>
+<div id="pickouter">
+    <input id="pick" data-provide="datepicker" type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+</div>
+<ul>
+    <li>list 1</li>
+    <li>list 2</li>
+    <li>list 3</li>
+    <li>list 4</li>
+    <li>list 5</li>
+</ul>
+<!--<script src="web/js/jquery-1.11.3.min.js"></script>-->
+<script src="target/scala-2.11/sjs-crc32-jsdeps.js"></script>
+<script src="web/js/crc32.js"></script>
+<script src="target/scala-2.11/sjs-crc32-fastopt.js"></script>
+<script src="web/js/test.js"></script>
+<!--<script src="web/js/bootstrap.min.js"></script>-->
+<!--<script src="web/js/bootstrap-datepicker.min.js"></script>-->
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        //do work
+        vu.co.kaiyin.crc32js.Main().main()
+
+    });
+//    $(function() {
+//        vu.co.kaiyin.crc32js.Main().main()
+//    })
+</script>
+</body>
+</html>
