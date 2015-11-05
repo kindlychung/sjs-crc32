@@ -12,6 +12,7 @@ Add it in your build.sbt at the end of resolvers:
 	libraryDependencies += "com.github.kindlychung" %%% "sjs-crc32" % "0.1"
 
 
+
 Also see [this file](https://github.com/kindlychung/sjs-crc32/blob/master/src/main/scala/vu/co/kaiyin/crc32js/Main.scala).
 
 
