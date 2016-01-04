@@ -1,6 +1,8 @@
 package vu.co.kaiyin.crc32js
 
 import org.scalajs.dom
+import org.scalajs.dom.Event
+import org.scalajs.dom.raw.HTMLInputElement
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSExport
@@ -24,6 +26,15 @@ object Main {
     dom.document.getElementById("text").appendChild(p2)
     dom.document.getElementById("text").appendChild(p3)
     dom.document.getElementById("text").appendChild(p4)
+
+    val input = dom.document.getElementById("pick").asInstanceOf[HTMLInputElement]
+//    val func: js.ThisFunction1[dom.Element, Event, _] = (elem: dom.Element, ev: Event) => {
+//      elem.selectionStart
+//    }
+//    input.addEventListener("keydown", func.asInstanceOf[Function1[Event, _]])
+    input.addEventListener("keydown", (_: Event) => {println("Caret: " + input.selectionStart) } )
+
+
   }
 
 }
